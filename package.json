@@ -2,14 +2,16 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://surya-06.github.io/",
   "dependencies": {
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1",
-    "homepage": "https://surya-06.github.io/"
+    "react-scripts": "2.1.1"
   },
   "scripts": {
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -23,5 +25,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
