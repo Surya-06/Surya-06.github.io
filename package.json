@@ -5,13 +5,14 @@
   "homepage": "https://surya-06.github.io/",
   "dependencies": {
     "materialize-css": "^1.0.0-rc.2",
+    "npm": "^4.6.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
   },
   "scripts": {
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -b master -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
